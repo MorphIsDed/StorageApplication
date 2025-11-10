@@ -19,8 +19,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import firestore from '@react-native-firebase/firestore';
 import RNFS from 'react-native-fs';
 import { enablePromise, openDatabase, SQLiteDatabase } from 'react-native-sqlite-storage';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
+// use require + any to avoid TypeScript error when no declaration file is available
+const Icon: any = require('react-native-vector-icons/MaterialCommunityIcons').default || require('react-native-vector-icons/MaterialCommunityIcons');
 enablePromise(true);
 
 const DB_NAME = 'localdata.db';
