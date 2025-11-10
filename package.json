@@ -16,6 +16,7 @@
     "@react-native/new-app-screen": "0.82.1",
     "react": "19.1.1",
     "react-native": "0.82.1",
+    "react-native-fs": "^2.20.0",
     "react-native-safe-area-context": "^5.5.2",
     "react-native-sqlite-storage": "^6.0.1"
   },
